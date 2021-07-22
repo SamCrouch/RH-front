@@ -1,3 +1,11 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: white;
+}
+
+
 
 .cards{
   max-width: 450px;
@@ -11,19 +19,10 @@
   height: 50%;
 }
 
-/* .image{
-  max-height: 300px;
-} */
-
 .cardsContainer{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: center;
-}
-
-.popup{
-  background-color: rgb(255, 117, 221);
-  padding: 10px;
 }

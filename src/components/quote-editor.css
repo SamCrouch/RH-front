@@ -1,27 +1,35 @@
  
-  .GroupForm {
+  .QuoteEditor {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 18px;
+  }
+  
+  .QuoteForm {
     display: flex;
     flex-direction: column;
     align-items: space-between;
     justify-content: center;
-    height: 40vh;
     min-width: 40vw;
   }
     
-  .buttonInput {
+  .submitButton {
     padding-top: 10px;
     padding-bottom: 10px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
+  }
+  .Buttons {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
   }
   
   .groupField {
     width: 100%;
     align-self: center;
-  }
-  
-  .buttonInput .submitButton {
-    margin-right: auto;
   }
   
   .groupInput {
@@ -30,26 +38,11 @@
     margin: 15px;
   }
 
-  .submitButton {
-    box-shadow: 0px 0px 0px 2px #9fb4f2;
-    background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
-    background-color:#7892c2;
-    border-radius:10px;
-    border:1px solid #4e6096;
-    display:inline-block;
-    cursor:pointer;
-    color:#ffffff;
-    font-family:Arial;
-    font-size:19px;
-    padding:12px 37px;
-    text-decoration:none;
-    text-shadow:0px 1px 0px #283966;
-  }
-  .submitButton:hover {
-    background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
-    background-color:#476e9e;
-  }
   .submitButton:active {
+    position:relative;
+    top:1px;
+  }
+  .cancelButton:active {
     position:relative;
     top:1px;
   }

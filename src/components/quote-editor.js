@@ -30,18 +30,25 @@ function QuoteEditor(props={quote:{quote: '', name:'', img_url:''}}) {
         window.location.reload()
     }
 
+    function handleClose() {
+      window.location.reload()
+  }
+
     return (
         <div className="QuoteEditor">
           <form className="QuoteForm classes.root" onSubmit={(e) => handleSubmit(e)} onChange={(e) => handleChange(e)}>
           <div className='groupInput'>
             <TextField id='outlined-multiple-flexible' multiline label="Quote" defaultValue={props.quote.quote} name='quote' className="groupField" required />     
+          </div>
+          <div className='groupInput'>    
             <TextField label="Housewife" defaultValue={props.quote.name} name='name' className="groupField" required/>
           </div>
           <div className='groupInput'>
             <TextField id='outlined-multiple-flexible' multiline label="Image URL" defaultValue={props.quote.img_url} name='img_url' className="groupField" required />
           </div>
-          <div className="buttonInput">
-          <Button type='submit' className="submitButton">Submit</Button>
+          <div className="Buttons">
+          <Button variant="contained" color='secondary' className='submitButton' type='submit'>Submit</Button>
+          <Button variant="contained" color='secondary' className='cancelButton' onClick={() => handleClose()}>Cancel</Button>
           </div>
         </form>
       </div>

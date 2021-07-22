@@ -10,10 +10,6 @@
     height: 50%;
   }
   
-  /* .image{
-    max-height: 300px;
-  } */
-  
   .cardsContainer{
     display: flex;
     flex-direction: row;
@@ -22,3 +18,8 @@
     justify-content: center;
   }
   
+  .popup{
+    background-color: #cedfff;
+    padding: 10px;
+
+  }

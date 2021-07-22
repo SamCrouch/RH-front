@@ -1,5 +1,5 @@
 import './Homepage.css';
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 
 
 function Homepage() {
@@ -7,8 +7,6 @@ function Homepage() {
   const [randomQuote, setRandomQuote] =useState('')
   const [hasLoaded, setHasLoaded] = useState(false)
   const [newRandQuote, setNewRandQuote] = useState(false)
-  const quoteText = useRef(null)
-  const speakerName = useRef(null)
 
 useEffect(() => {
     async function getQuote() {
@@ -30,7 +28,7 @@ function newQuote() {
 }
 
     return (
-      <div>
+      <div className='homepage'>
         <div>
           <h2>{randomQuote}</h2>  
         </div>
