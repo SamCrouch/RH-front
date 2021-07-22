@@ -35,7 +35,7 @@ function newQuote() {
           <h2>{randomQuote}</h2>  
         </div>
         <div>
-          <button onClick={newQuote}>New Quote</button>
+          <button onClick={newQuote}>Random Quote</button>
         </div>
       </div>
     )
