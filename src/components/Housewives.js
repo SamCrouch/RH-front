@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
@@ -28,10 +27,11 @@ const [allHousewives, setAllHousewives] = useState([])
 const useStyles = makeStyles({
     root: {
       maxWidth: 345,
-      minWidth: 345
+      minWidth: 345,
+      margin: 10,
     },
     media: {
-      height: 500,
+      height: 400,
     },
   });
 
@@ -93,10 +93,8 @@ useEffect(() => {
       <div>
         <div>
           <FormControl className={classes.formControl}>
-            <InputLabel id="demo-simple-select-helper-label"></InputLabel>
+            <InputLabel></InputLabel>
             <Select
-                labelId="demo-simple-select-helper-label"
-                id="demo-simple-select-helper"
                 value={housewife}
                 onChange={handleSortChange}
                 >
@@ -119,7 +117,7 @@ useEffect(() => {
       {allQuotes.map((quote) =>
       <div>
       <Card className={classes.root}>
-      <CardActionArea>
+      {/* <CardActionArea> */}
         <CardMedia
           className={classes.media}
           image={quote.img_url}
@@ -129,7 +127,7 @@ useEffect(() => {
           <Typography variant="body1" color="textPrimary" component="p"> {quote.quote}</Typography>
           <Typography variant="body3" color="textSecondary" component="p">~{quote.name} </Typography>
         </CardContent>
-      </CardActionArea>
+      {/* </CardActionArea> */}
       <CardActions>
         <Popup trigger={<Button size="small" color="primary">Edit</Button>} modal>
             <div className='popup'><QuoteEditor quote={quote} /></div>
