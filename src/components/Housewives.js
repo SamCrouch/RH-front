@@ -28,11 +28,12 @@ const useStyles = makeStyles({
     root: {
       maxWidth: 345,
       minWidth: 345,
+      minHeight: 300,
       margin: 10,
     },
     media: {
       height: 500,
-      // width: '100%',
+      // width: "100%",
       // objectFit: 'cover'
     },
   });
