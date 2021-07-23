@@ -4,7 +4,7 @@ This App is a database that allows you to view, edit, and add to all of your fav
 
 ## Available Scripts
 
-In the project directory, you can run:
+The Homepage greets you with a random quote pulled from the database. You can select the `NEW QUOTE`
 
 ### `npm start`
 
