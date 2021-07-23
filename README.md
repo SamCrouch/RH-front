@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# The Authoritative Database of Real Housewives Quotes
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This App is a database that allows you to view, edit, and add to all of your favorite lines from Bravo's hit tv series.
 
 ## Available Scripts
 
