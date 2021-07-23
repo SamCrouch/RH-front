@@ -31,7 +31,9 @@ const useStyles = makeStyles({
       margin: 10,
     },
     media: {
-      height: 400,
+      height: 500,
+      // width: '100%',
+      // objectFit: 'cover'
     },
   });
 
