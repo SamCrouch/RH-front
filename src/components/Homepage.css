@@ -1,4 +1,32 @@
 .homepage {
     text-align: center;
+    background-image: url("https://assets.vogue.com/photos/5ae9d41c22c45e4fb1ba57db/master/w_2560%2Cc_limit/00-story-andy-cohen.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding-top: 30px;
   }
   
+  .quotebox{
+      background-color: rgba(255, 255, 255, 0.6);
+      font-size: xx-large;
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      justify-content: center;
+      padding: 20px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+      min-width: 30vw;
+      min-height: 20vh;
+      border-radius: 4px;
+  }
+
+  .quoteHw{
+      font-size: x-large;
+      padding: 10px;
+  }

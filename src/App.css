@@ -2,10 +2,14 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-color: white;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
 }
 
-
+.nav{
+  width: 100vw;
+}
 
 .cards{
   max-width: 450px;
@@ -21,7 +25,7 @@
 
 .cardsContainer{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: center;

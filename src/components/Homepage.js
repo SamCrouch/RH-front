@@ -1,10 +1,10 @@
 import './Homepage.css';
 import { useState, useEffect } from 'react';
-
+import Button from '@material-ui/core/Button';
 
 function Homepage() {
 
-  const [randomQuote, setRandomQuote] =useState('')
+  const [randomQuote, setRandomQuote] =useState({})
   const [hasLoaded, setHasLoaded] = useState(false)
   const [newRandQuote, setNewRandQuote] = useState(false)
 
@@ -13,7 +13,7 @@ useEffect(() => {
         await fetch('https://real-housewives-server.herokuapp.com/randomquote')
         .then(data => data.json())
         .then(json => {
-            setRandomQuote(`${json[0].quote} ~${json[0].name}`)
+            setRandomQuote(json[0])
         })
     }
     getQuote()
@@ -26,15 +26,22 @@ if(!hasLoaded){
 function newQuote() {
     setNewRandQuote(!newRandQuote)
 }
-
+ console.log(randomQuote.img_url)
     return (
       <div className='homepage'>
-        <div>
-          <h2>{randomQuote}</h2>  
+        <div className='quotebox'>
+          <div>
+          {randomQuote.quote}  
+          </div>
+          <div className='quoteHw'>
+            ~{randomQuote.name}  
+          </div>
+          <div>
+          <Button onClick={newQuote} variant="contained" color="secondary">New Quote</Button>
         </div>
-        <div>
-          <button onClick={newQuote}>Random Quote</button>
         </div>
+
+
       </div>
     )
 }

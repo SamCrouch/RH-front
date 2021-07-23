@@ -6,16 +6,6 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
-import { createTheme } from '@material-ui/core/styles';
-import { ThemeProvider } from '@material-ui/styles';
-
-const theme = createTheme({
-  palette: {
-    primary: { main: '#9cadce'},
-    secondary: {main: '#7ec4cf'},
-    neutral: {main: '#cedfff'}
-  },
-});
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -34,7 +24,6 @@ const Nav = () => {
     const classes = useStyles();
 
     return (
-      <ThemeProvider theme={theme}>
         <div className={classes.root}>
       <AppBar position="static" color='primary'>
         <Toolbar>
@@ -54,7 +43,6 @@ const Nav = () => {
         </Toolbar>
       </AppBar>
     </div>
-      </ThemeProvider>
     )
 }
 

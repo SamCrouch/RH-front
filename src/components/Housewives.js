@@ -129,10 +129,10 @@ useEffect(() => {
         </CardContent>
       {/* </CardActionArea> */}
       <CardActions>
-        <Popup trigger={<Button size="small" color="primary">Edit</Button>} modal>
+        <Popup trigger={<Button size="small" color="secondary">Edit</Button>} modal>
             <div className='popup'><QuoteEditor quote={quote} /></div>
         </Popup>
-        <Button size="small" color="primary" onClick={() => handleDelete(quote.id)}>
+        <Button size="small" color="secondary" onClick={() => handleDelete(quote.id)}>
           Delete
         </Button>
       </CardActions>

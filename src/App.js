@@ -19,8 +19,10 @@ function App() {
   return (
     <div className='App'>
       <ThemeProvider theme={theme}>
-                <Router>
-          <Nav />
+        <Router>
+          <div className='nav'>
+            <Nav />
+          </div>
           <Switch>
             <Route exact path="/" component={Homepage} />
             <Route exact path="/housewives" component={Housewives} />
