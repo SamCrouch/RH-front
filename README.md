@@ -1,6 +1,6 @@
 # The Authoritative Database of Real Housewives Quotes
 
-This App is a database that allows you to view, edit, and add to all of your favorite lines from Bravo's hit tv series.
+This App is a database that allows you to view, edit, and add all of your favorite lines from Bravo's hit tv series.
 
 ## Homepage
 
