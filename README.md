@@ -10,7 +10,7 @@ The Homepage greets you with a random quote pulled from the database. You can se
 
 ## All Quotes Page
 
-The All Quotes page displays all of the quotes in the database on Material UI cards. Each card allows you to edit or delete the quote. In the editor, yuo can correct the quote or housewife, or even change the image to be displayed. It can also support GIFs, Teresa's rant and table flip are *iconic* so I had to include it.
+The All Quotes page displays all of the quotes in the database on Material UI cards. Each card allows you to edit or delete the quote. In the editor, you can correct the quote or housewife, or even change the image to be displayed. It can also support GIFs, Teresa's rant and table flip are *iconic* so I had to include it.
 
 Additional functionality includes the ability to filter quotes by housewife, and add a new quote.
 
