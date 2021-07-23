@@ -6,7 +6,7 @@ This App is a database that allows you to view, edit, and add all of your favori
 
 The Homepage greets you with a random quote pulled from the database. You can select the `NEW QUOTE` button to display a new random quote from the database. On the Nav bar there is an option to go to the `ALL QUOTES` page.
 
-![homepage](https://github.com/SamCrouch/RH-front/blob/master/Homepage.png?raw=true)
+![homepage](https://github.com/SamCrouch/RH-front/blob/master/Homepage.PNG?raw=true)
 
 ## All Quotes Page
 
