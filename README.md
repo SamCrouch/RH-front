@@ -14,4 +14,4 @@ The All Quotes page displays all of the quotes in the database on Material UI ca
 
 Additional functionality includes the ability to filter quotes by housewife, and add a new quote.
 
-![All Quotes](https://github.com/SamCrouch/RH-front/blob/master/all-quotes.png?raw=true)
+![All Quotes](https://github.com/SamCrouch/RH-front/blob/master/all-quotes.PNG?raw=true)
